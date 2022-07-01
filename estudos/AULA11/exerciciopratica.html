@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulado</title>
+    <style>
+        body{
+            background-color: rgb(165, 165, 243);
+            font: normal 20pt Arial;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>Sistema de nacionalidade</p>
+    Em qual país você vive <input type="text" name="país" id="país">
+    <input type="button" value="Pesquisar" onclick="pesquisar()">
+    <div id="res">
+        <script>
+            function pesquisar() {
+                var paísp = document.querySelector("país")
+                var res = document.querySelector('div#res')
+                var vel = (país.value)
+                res.innerHTML = `<p>Seu pais é ${vel}.</p>`
+                if(vel == 'Brasil'){
+                res.innerHTML = `<p>Você é Brasileiro!</p>`  
+                }  else {
+                res.innerHTML = `<p>Você é Estrangeiro!</p>`
+            }}
+        </script>
+    
+</body>
+</html>
