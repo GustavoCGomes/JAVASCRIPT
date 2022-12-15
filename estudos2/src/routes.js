@@ -1,6 +1,6 @@
 const UserController = require('./controllers/UserController');
 
-module.exports = [ 
+module.exports = [
   {
     endpoint: '/users',
     method: 'GET',
